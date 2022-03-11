@@ -8,13 +8,20 @@
  */
 int main(void)
 {
-	char hexNums;
+	int hexNum;
 
-	hexNums = 'a';
-	while (hexNums <= 'f')
+	hexNum = 0;
+	while (hexNum <= 15)
 	{
-		putchar(hexNums);
-		hexNums++;
+		putchar(hexNum + '0');
+		if (hexNum == 10)
+		{
+			hexNum == 'a';
+		} else if (hexNum == 11)
+		{
+			hexnum == 'b';
+		}
+		hexNum++;
 	}
 	putchar('\n');
 	return (0);
