@@ -11,7 +11,7 @@ int main(void)
 
 	for (ch = 0; ch <= 'z'; ch++)
 	{
-		if (ch = 'a')
+		if (ch == 'a')
 		{
 			putchar(ch);
 		}
