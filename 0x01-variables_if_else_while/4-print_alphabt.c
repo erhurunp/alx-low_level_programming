@@ -9,7 +9,7 @@ int main(void)
 {
 	char ch;
 
-	for (ch = ''; ch <= 'z'; ch++)
+	for (ch = 0; ch <= 'z'; ch++)
 	{
 		if (ch = 'a')
 		{
