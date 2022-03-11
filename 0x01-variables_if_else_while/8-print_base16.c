@@ -13,7 +13,7 @@ int main(void)
 	hexNum = 0;
 	while (hexNum <= 'f')
 	{
-		putchar(hexNum)
+		putchar(hexNum);
 		hexNum++;
 	}
 	putchar('\n');
