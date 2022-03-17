@@ -5,17 +5,13 @@
  * in lowercase
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void)
-	{
-		char alph;
+	char alph;
 
-		for (alph = 'a'; alph <= 'z'; alph++)
-		{
-			_putchar(alph);
-		}
-		_putchar('\n');
+	for (alph = 'a'; alph <= 'z'; alph++)
+	{
+		_putchar(alph);
 	}
-	return (0);
+	_putchar('\n');
 }
