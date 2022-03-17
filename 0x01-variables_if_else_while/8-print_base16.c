@@ -8,13 +8,18 @@
  */
 int main(void)
 {
-	char hexNum;
+	int num;
+	char letter;
 
-	hexNum = 0;
-	while (hexNum <= 'f')
+	for (num = 0; num < 10; num++)
 	{
-		putchar(hexNum);
-		hexNum++;
+		putchar(num);
+	}
+	letter = 'a';
+	while (letter <= 'f')
+	{
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 	return (0);
