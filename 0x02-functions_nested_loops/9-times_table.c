@@ -1,25 +1,27 @@
 #include "main.h"
 
 /**
- * times_table - prints the 9 times table
- * beginning with 0
+ * times_table - prints the 9 multiplication
+ * table
  *
  * Return: void
  */
 
 void times_table(void)
 {
-	int row, column, product, tens, ones;
+	int horizontal, vertical, product, two_dig, one_dig;
 
-	for (row = 0; row <= 9; row++)
+	horizontal = 0;
+	while (horizontal <= 9)
 	{
-		for (column = 0; column <= 9; column++)
+		vertical = 0;
+		while (vertical <= 9)
 		{
-			product = row * column;
-			tens = product / 10;
-			ones = product % 10;
+			product = horizontal * vertical;
+			two_dig = product / 10;
+			one_dig = product % 10;
 
-			if (column == 0)
+			if (vertical == 0)
 			{
 				_putchar('0');
 			}
@@ -28,16 +30,18 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(ones + '0');
+				_putchar(one_dig + '0');
 			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(tens + '0');
-				_putchar(ones + '0');
+				_putchar(two_dig + '0');
+				_putchar(one_dig + '0');
 			}
+			vertical++;
 		}
 		_putchar('\n');
+		horizontal++;
+	}
 }
-
