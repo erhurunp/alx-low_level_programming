@@ -10,9 +10,9 @@
 
 void times_table(int n)
 {
-	int horizontal, vertical;
+	int horizontal, vertical, product;
 
-	if (n >= 0; && n < 15)
+	if (n >= 0 && n < 15)
 	{
 		horizontal = 0;
 		while (horizontal <= 9)
