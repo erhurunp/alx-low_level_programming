@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * times_table - prints n multiplication
+ * print_times_table - prints n multiplication
  * table starting with zero
  * @n: n is an integer
  *
  * Return: void
  */
 
-void times_table(int n)
+void print_times_table(int n)
 {
 	int horizontal, vertical, product;
 
