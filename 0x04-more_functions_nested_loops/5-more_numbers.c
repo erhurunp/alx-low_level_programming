@@ -12,13 +12,14 @@ void more_numbers(void)
 
 	while (c < 10)
 	{
+		_putchar('\n');
+		
 		d = 0;
 		while (d <= 14)
 		{
 			_putchar(d + '0');
 			d++;
 		}
-		_putchar('\n');
 		c++;
 	}
 	_putchar('\n');
