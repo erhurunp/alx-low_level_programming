@@ -13,11 +13,7 @@ void print_most_numbers(void)
 
 	while (c <= 9)
 	{
-		if (c == 2 || c == 4)
-		{
-			continue;
-		}
-		else
+		if (c != 2 && c != 4)
 		{
 			_putchar(c + '0');
 		}
